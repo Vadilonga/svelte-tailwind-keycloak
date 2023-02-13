@@ -1,5 +1,5 @@
 {
-	"name": "svelte-tailwind-app",
+	"name": "svelte-tailwind-keycloak-app",
 	"version": "0.0.1",
 	"private": true,
 	"scripts": {

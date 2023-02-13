@@ -1,2 +1,2 @@
-# svelte-tailwind
-starter for svelte with tailwind
+# svelte-tailwind-keycloak
+starter for svelte with tailwind and keycloak
