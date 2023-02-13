@@ -1,5 +1,37 @@
-<script>
+<script lang='ts'>
   import "../app.css";
-</script>
+  import { onMount } from 'svelte';
+    import Keycloak, { type KeycloakInitOptions } from 'keycloak-js';
+	import { loadConfigFromFile, loadConfigFromFile } from "vite";
+  
+    let keycloak: Keycloak;
+    export let isAuth = false;
+    
+    onMount(async () => {
+      keycloak = new Keycloak({
+        realm: 'keycloak',
+        url: 'http://localhost:8080',
+        clientId: 'svelte-app'
+      });
+  
+      try {
+        await keycloak.init({
+          onLoad: 'login-required'
+        });
+        isAuth=true;
+        console.log('User is authenticated');
+      } catch (error) {
+        console.error(error);
+      }
+    });
 
-<slot />
+</script>
+{#if isAuth}
+<main>
+  <slot/>
+</main>
+{:else}
+Authentication failed
+{/if}
+
+
