@@ -1,9 +1,8 @@
 <script lang='ts'>
   import "../app.css";
   import { onMount } from 'svelte';
-    import Keycloak, { type KeycloakInitOptions } from 'keycloak-js';
-	import { loadConfigFromFile, loadConfigFromFile } from "vite";
-  
+  import Keycloak from 'keycloak-js';
+
     let keycloak: Keycloak;
     export let isAuth = false;
     
