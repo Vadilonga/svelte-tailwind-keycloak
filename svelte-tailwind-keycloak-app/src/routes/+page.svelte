@@ -1,4 +1,6 @@
-<h1 class="text-3xl font-bold underline">Hello world!</h1>
+<div class="min-h-screen w-full bg-gray-100 flex flex-col items-center justify-center">
+	Hi everyone
+  </div>
 
 <style lang="postcss">
 	:global(html) {
