@@ -2,14 +2,16 @@
 starter for svelte with tailwind and keycloak
 
 ## Setup
-- run keycloak on docker
+- npm i (to install all dependencies).
+- run keycloak on docker.
   ```
   docker run -p 8080:8080 -e KEYCLOAK_ADMIN=admin -e KEYCLOAK_ADMIN_PASSWORD=admin quay.io/keycloak/keycloak:20.0.3 start-dev
   ```
-
-- create a new realm keycloak (example: keycloak), a new client (example: svelte-app) and a user to test the login.
-
-- try to login in your svelte app
+- create a new realm keycloak (example: keycloak).
+- Inside the realm previously created create a new client (example: svelte-app).
+- Inside the realm previously created create a user to test the login.
+- Setup the password for the user previously created.
+- try to login in your svelte app.
 
   #### ⚠️ ONLY IN DEV ENVIRONMENT ⚠️
 
