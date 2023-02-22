@@ -13,6 +13,7 @@ starter for svelte with tailwind and keycloak
 - setup the password for the user previously created.
 - try to login in your svelte app.
 
+
   #### ⚠️ ONLY IN DEV ENVIRONMENT ⚠️
 
-  In client creation remember to setup the "Root URL" (example: http://localhost:8080/*), the "Valid redirect URIs" (example: *), the "Web origins" (example: *).
+  In client creation remember to setup the "Root URL" (example: http://localhost:8080/*), the "Valid redirect URIs" (example: *), the "Web origins" (example: *), the "Valid post logout redirect URIs" (example: *)
